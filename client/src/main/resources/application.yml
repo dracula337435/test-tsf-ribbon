@@ -1,6 +1,14 @@
 spring:
   application:
     name: test-client
+  cloud:
+    consul:
+      enabled: false
 
 server:
   port: 8090
+
+test-server:
+  ribbon:
+#    NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
+    listOfServers: localhost:8080

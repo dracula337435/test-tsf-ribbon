@@ -25,6 +25,12 @@
         <dependency>
             <groupId>com.tencent.tsf</groupId>
             <artifactId>spring-cloud-tsf-starter</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.tencent.tsf</groupId>
+                    <artifactId>spring-cloud-tsf-route</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 
