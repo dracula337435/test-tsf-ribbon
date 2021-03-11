@@ -30,4 +30,4 @@ test-server:
 1. 配置```spring.cloud.consul.enabled=false```
 1. 配置```<service-name>.ribbon.listOfServers=...```
 
-副作用：因为禁用了```consul```，即所有服务都是静态；配不出一部分动，一部分静的效果；另外，虽然禁用了```consul```，但是启动时还尝试连```consul```，连不上报错，启动后```consul```界面没有。
+副作用：因为禁用了```consul```，即所有服务都是静态；配不出一部分动，一部分静的效果；另外，虽然禁用了```consul```，但是启动时还尝试连```consul```，连不上报错，启动后```consul```界面没有服务。
